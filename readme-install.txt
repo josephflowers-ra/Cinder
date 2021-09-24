@@ -10,6 +10,7 @@
 # I will find a place to upload the model as its too big for GitHub and share the link here.
 #
 # I also included my testing chat script for interfacing with the model.
+# cinder_chat.py
 #
 
 #Install mycroft
