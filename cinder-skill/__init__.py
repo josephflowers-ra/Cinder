@@ -9,16 +9,9 @@ class Cinder(FallbackSkill):
 
     def __init__(self):
         super(Cinder, self).__init__(name='Cinder')
-        # Add your own initialization code here
 
-    """
-    def __init__(self):
-        MycroftSkill.__init__(self)
-    """
-    #@intent_file_handler('cinder.intent')
     def initialize(self):
         self.register_fallback(self.handle_fallback, 10)
-     # Any other initialize code you like can be placed here
 
     def handle_fallback(self, message):
         def get_model_tokenizer(weights_dir, device = 'cpu'):
@@ -115,12 +108,9 @@ class Cinder(FallbackSkill):
         #########################################################
         chat_count = 0
 
-        if utterance : #'cinder' in utterance:
+        if utterance : 
             previous = ''
             response = utterance
-            #while chat_count < 1:
-            #chat_count += 1
-
             prompt_text = previous + 'USER: ' + response + '<END>\nCINDER: '
 
             gout = generate_messages(
@@ -147,12 +137,12 @@ class Cinder(FallbackSkill):
             print('first_out: ' + first_out)
             cinder = first_out
             self.speak(cinder)
-            #time.sleep(5)
+            """#time.sleep(5)
             #response = self.get_response()
             if response == None:
                 response = 'cinder tell me more'
 
-            previous = prompt_text + cinder + '<END>\n'
+            previous = prompt_text + cinder + '<END>\n'"""
             return True
         else:
             return False
@@ -164,8 +154,7 @@ class Cinder(FallbackSkill):
         self.remove_fallback(self.handle_fallback)
         super(cinder-skill, self).shutdown()
 
-    #def handle_cinder(self, message):
-    #    self.speak_dialog('cinder')
+
 
 
 
