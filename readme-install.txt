@@ -21,7 +21,6 @@ bash dev_setup.sh
 # Install transformers to run the distilgpt2model
 sudo apt install python3-pip
 git clone https://github.com/huggingface/transformers.git
-#next command needs to be run in the transformers directory
 pip install -q ./transformers
 pip install datasets
 pip install torch
