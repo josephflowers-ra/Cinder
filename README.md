@@ -3,7 +3,7 @@ mycroft cinder transformers distilgpt2 cozmo robot
 
 Welcome to the Cinder Program.
 
-If you want to skip straight to a fun video: One robot - https://youtu.be/UIf7f-iZavc . Multiple Robots - https://youtu.be/98BWNCstttg .
+If you want to skip straight to a fun video: One robot - https://youtu.be/UIf7f-iZavc . Multiple robots - https://youtu.be/98BWNCstttg .
 
 I have always been interested in AI and there are some very interesting models that have some great conversational skills but they are absurdly large and most run on server farms. Even then most Natural Language Processing AI’s are trained on just a few datasets with Reddit being the top one for conversational AI. This leads to some inappropriate output. Some other limitations of these AI’s are that they can sometimes take on multiple personas, most have no or very little idea of what was said by the user or itself even the line before and they lack any real character of their own.   Here I make an attempt at building a small conversational AI that could be run on a home computer or a phone or raspberry pi but with the goal of giving it a quirky character that responds as an AI and holds at least short conversations. I also try to make it accessible by using only voice commands and integrate with robotics platforms. I call my custom model and program Cinder.
 
